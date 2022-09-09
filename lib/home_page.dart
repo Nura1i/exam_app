@@ -8,6 +8,15 @@ class home_page extends StatefulWidget {
 }
 
 class _home_pageState extends State<home_page> {
+  Color upl = const Color.fromARGB(255, 43, 41, 41);
+  Color mess = const Color.fromARGB(255, 43, 41, 41);
+  Color sav = const Color.fromARGB(255, 43, 41, 41);
+  Color cha = const Color.fromARGB(255, 43, 41, 41);
+  Color arch = const Color.fromARGB(255, 43, 41, 41);
+  Color pla = const Color.fromARGB(255, 43, 41, 41);
+  Color inb = const Color.fromARGB(255, 43, 41, 41);
+  Color book = const Color.fromARGB(255, 43, 41, 41);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,14 +76,24 @@ class _home_pageState extends State<home_page> {
                     width: 290,
                     height: 53,
                     margin: const EdgeInsets.only(top: 13),
-                    // color: Colors.green,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(3.5),
                         // color: const Color.fromARGB(255, 108, 207, 112)),
-                        color: Colors.green),
+                        color: inb),
                     alignment: Alignment.topLeft,
                     child: ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        setState(() {
+                          inb = Colors.green;
+                          upl = const Color.fromARGB(255, 43, 41, 41);
+                          mess = const Color.fromARGB(255, 43, 41, 41);
+                          sav = const Color.fromARGB(255, 43, 41, 41);
+                          cha = const Color.fromARGB(255, 43, 41, 41);
+                          arch = const Color.fromARGB(255, 43, 41, 41);
+                          pla = const Color.fromARGB(255, 43, 41, 41);
+                          book = const Color.fromARGB(255, 43, 41, 41);
+                        });
+                      },
                       title: const Text(
                         'Inbox',
                         style: TextStyle(color: Colors.black, fontSize: 14),
@@ -85,30 +104,52 @@ class _home_pageState extends State<home_page> {
                         size: 26,
                       ),
                     )),
-                ListTile(
-                  onTap: () {
-                    // setState(() {
-                    //   con = Colors.white;
-                    // });
-                  },
-                  title: const Text(
-                    'Bookmark',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 215, 215, 215),
-                        fontSize: 14),
-                  ),
-                  leading: const Icon(
-                    Icons.bookmark,
-                    color: Colors.grey,
-                    size: 26,
+                Container(
+                  color: book,
+                  child: ListTile(
+                    onTap: () {
+                      setState(() {
+                        book = Colors.green;
+                        upl = const Color.fromARGB(255, 43, 41, 41);
+                        mess = const Color.fromARGB(255, 43, 41, 41);
+                        sav = const Color.fromARGB(255, 43, 41, 41);
+                        cha = const Color.fromARGB(255, 43, 41, 41);
+                        arch = const Color.fromARGB(255, 43, 41, 41);
+                        pla = const Color.fromARGB(255, 43, 41, 41);
+                        inb = const Color.fromARGB(255, 43, 41, 41);
+                      });
+                    },
+                    title: const Text(
+                      'Bookmark',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 215, 215, 215),
+                          fontSize: 14),
+                    ),
+                    leading: const Icon(
+                      Icons.bookmark,
+                      color: Colors.grey,
+                      size: 26,
+                    ),
                   ),
                 ),
                 Row(children: [
                   Container(
                       width: 260,
                       height: 50,
+                      decoration: BoxDecoration(color: cha),
                       child: ListTile(
-                          onTap: () {},
+                          onTap: () {
+                            setState(() {
+                              cha = Colors.green;
+                              upl = const Color.fromARGB(255, 43, 41, 41);
+                              sav = const Color.fromARGB(255, 43, 41, 41);
+                              mess = const Color.fromARGB(255, 43, 41, 41);
+                              arch = const Color.fromARGB(255, 43, 41, 41);
+                              pla = const Color.fromARGB(255, 43, 41, 41);
+                              inb = const Color.fromARGB(255, 43, 41, 41);
+                              book = const Color.fromARGB(255, 43, 41, 41);
+                            });
+                          },
                           title: const Text(
                             'Chat',
                             style: TextStyle(
@@ -131,34 +172,60 @@ class _home_pageState extends State<home_page> {
                     child: const Text('18'),
                   )
                 ]),
-                ListTile(
-                  onTap: () {},
-                  title: const Text(
-                    'Archive',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 215, 215, 215),
-                        fontSize: 14),
-                  ),
-                  leading: const Icon(
-                    Icons.access_time_rounded,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                ),
-                ListTile(
-                  onTap: () {},
-                  title: const Text(
-                    'Places',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 215, 215, 215),
-                        fontSize: 14),
-                  ),
-                  leading: const Icon(
-                    Icons.place,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                ),
+                Container(
+                    color: arch,
+                    child: ListTile(
+                      onTap: () {
+                        setState(() {
+                          arch = Colors.green;
+                          upl = const Color.fromARGB(255, 43, 41, 41);
+                          sav = const Color.fromARGB(255, 43, 41, 41);
+                          mess = const Color.fromARGB(255, 43, 41, 41);
+                          arch = const Color.fromARGB(255, 43, 41, 41);
+                          pla = const Color.fromARGB(255, 43, 41, 41);
+                          inb = const Color.fromARGB(255, 43, 41, 41);
+                          book = const Color.fromARGB(255, 43, 41, 41);
+                        });
+                      },
+                      title: const Text(
+                        'Archive',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 215, 215, 215),
+                            fontSize: 14),
+                      ),
+                      leading: const Icon(
+                        Icons.access_time_rounded,
+                        color: Colors.grey,
+                        size: 26,
+                      ),
+                    )),
+                Container(
+                    color: pla,
+                    child: ListTile(
+                      onTap: () {
+                        setState(() {
+                          pla = Colors.green;
+                          upl = const Color.fromARGB(255, 43, 41, 41);
+                          sav = const Color.fromARGB(255, 43, 41, 41);
+                          mess = const Color.fromARGB(255, 43, 41, 41);
+                          arch = const Color.fromARGB(255, 43, 41, 41);
+                          cha = const Color.fromARGB(255, 43, 41, 41);
+                          inb = const Color.fromARGB(255, 43, 41, 41);
+                          book = const Color.fromARGB(255, 43, 41, 41);
+                        });
+                      },
+                      title: const Text(
+                        'Places',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 215, 215, 215),
+                            fontSize: 14),
+                      ),
+                      leading: const Icon(
+                        Icons.place,
+                        color: Colors.grey,
+                        size: 26,
+                      ),
+                    )),
                 Container(
                   width: double.infinity,
                   height: 0.3,
@@ -171,9 +238,23 @@ class _home_pageState extends State<home_page> {
                       style: TextStyle(color: Colors.grey, fontSize: 16),
                     )),
                 Container(
+                    width: 290,
+                    height: 53,
+                    color: upl,
                     margin: const EdgeInsets.only(top: 15),
                     child: ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        setState(() {
+                          upl = Colors.green;
+                          mess = const Color.fromARGB(255, 43, 41, 41);
+                          sav = const Color.fromARGB(255, 43, 41, 41);
+                          cha = const Color.fromARGB(255, 43, 41, 41);
+                          arch = const Color.fromARGB(255, 43, 41, 41);
+                          pla = const Color.fromARGB(255, 43, 41, 41);
+                          inb = const Color.fromARGB(255, 43, 41, 41);
+                          book = const Color.fromARGB(255, 43, 41, 41);
+                        });
+                      },
                       title: const Text(
                         'Uploaded',
                         style: TextStyle(
@@ -186,34 +267,61 @@ class _home_pageState extends State<home_page> {
                         size: 26,
                       ),
                     )),
-                ListTile(
-                  onTap: () {},
-                  title: const Text(
-                    'Messages',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 215, 215, 215),
-                        fontSize: 14),
-                  ),
-                  leading: const Icon(
-                    Icons.mail,
-                    color: Colors.grey,
-                    size: 26,
+                Container(
+                  color: mess,
+                  child: ListTile(
+                    onTap: () {
+                      setState(() {
+                        mess = Colors.green;
+                        upl = const Color.fromARGB(255, 43, 41, 41);
+                        sav = const Color.fromARGB(255, 43, 41, 41);
+                        cha = const Color.fromARGB(255, 43, 41, 41);
+                        arch = const Color.fromARGB(255, 43, 41, 41);
+                        pla = const Color.fromARGB(255, 43, 41, 41);
+                        inb = const Color.fromARGB(255, 43, 41, 41);
+                        book = const Color.fromARGB(255, 43, 41, 41);
+                      });
+                    },
+                    title: const Text(
+                      'Messages',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 215, 215, 215),
+                          fontSize: 14),
+                    ),
+                    leading: const Icon(
+                      Icons.mail,
+                      color: Colors.grey,
+                      size: 26,
+                    ),
                   ),
                 ),
-                ListTile(
-                  onTap: () {},
-                  title: const Text(
-                    'Saved',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 215, 215, 215),
-                        fontSize: 14),
+                Container(
+                  color: sav,
+                  child: ListTile(
+                    onTap: () {
+                      setState(() {
+                        sav = Colors.green;
+                        mess = const Color.fromARGB(255, 43, 41, 41);
+                        upl = const Color.fromARGB(255, 43, 41, 41);
+                        cha = const Color.fromARGB(255, 43, 41, 41);
+                        arch = const Color.fromARGB(255, 43, 41, 41);
+                        pla = const Color.fromARGB(255, 43, 41, 41);
+                        inb = const Color.fromARGB(255, 43, 41, 41);
+                      });
+                    },
+                    title: const Text(
+                      'Saved',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 215, 215, 215),
+                          fontSize: 14),
+                    ),
+                    leading: const Icon(
+                      Icons.bookmark,
+                      color: Colors.grey,
+                      size: 26,
+                    ),
                   ),
-                  leading: const Icon(
-                    Icons.bookmark,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                ),
+                )
               ],
             )),
         backgroundColor: Colors.black,
