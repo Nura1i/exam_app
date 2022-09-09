@@ -103,20 +103,34 @@ class _home_pageState extends State<home_page> {
                     size: 26,
                   ),
                 ),
-                ListTile(
-                  onTap: () {},
-                  title: const Text(
-                    'Chat',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 215, 215, 215),
-                        fontSize: 14),
-                  ),
-                  leading: const Icon(
-                    Icons.chat_rounded,
-                    color: Colors.grey,
-                    size: 26,
-                  ),
-                ),
+                Row(children: [
+                  Container(
+                      width: 260,
+                      height: 50,
+                      child: ListTile(
+                          onTap: () {},
+                          title: const Text(
+                            'Chat',
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 215, 215, 215),
+                                fontSize: 14),
+                          ),
+                          leading: const Icon(
+                            Icons.chat_rounded,
+                            color: Colors.grey,
+                            size: 26,
+                          ))),
+                  Container(
+                    width: 28,
+                    height: 28,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.orange,
+                    ),
+                    alignment: Alignment.center,
+                    child: const Text('18'),
+                  )
+                ]),
                 ListTile(
                   onTap: () {},
                   title: const Text(
